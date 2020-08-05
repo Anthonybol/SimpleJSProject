@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+	
+<link rel="stylesheet" href="../CSS/styles.css"><!--  Link to CSS
+ -->
+
+</head>
+
+<body class="body">
+
+  
+  <div class ="content"> <!-- Class of all content -->
+	
+	<div class="banner"> <!-- Banner class -->
+  
+		<img class="banner-image" src="banner.jpg" alt="this-is-a-banner">
+
+	    <div class="topnav"> <!-- Top navigation class -->
+		<a class="active" href="members_order.html">Order</a>
+		<a href="HTML Pract B/html/members/members.html">Members</a>
+        <input type="text" placeholder="Search.."> <!-- Nav search box -->
+        <div id = "headerDiv"> <!-- Header class -->
+	</div>
+ </div>
+</div>
+</div>
+  
+
+ <!-- Image table class -->
+<div class="div_table">
+<table  id="imageTable" cellspacing="0" cellpadding="0" border="0">
+</table>
+</div>
+
+<div class ="formContent"> 
+	<form id="orderForm" name="orderForm" method="post" onsubmit="return validateForm();"> <!-- alidate form for errors -->
+	<div class="Order Item">
+		<h2>Order Item</h2>
+  </div>
+	<table width="200" border="1"><!--  Order form  -->
+		<tbody>
+			<tr>
+				<td>Item Description</td>
+				<td colspan = "2">
+					<div id="itemDescriptionDiv"></div>
+										
+			</td>
+			</tr>
+            <tr>
+                <td>Quantity:</td>
+			    <td colspan="2">
+				    <input type="number" value="1" name="thisQty" id="thisQty"/>
+			</td>
+          </tr>
+          <tr>
+          	<td>Price:</td>
+          	<td colspan="2"> 
+                <div id="priceDiv"></div>
+          	</td>
+          </tr>
+          <tr>
+          	<td>Total Price:</td>
+          	<td colspan="2">
+				  <div id="totalPriceDiv">				</div>
+			</td>
+          </tr>
+
+          <tr>
+          	<td><!--  Buttons below for order form -->
+          		<input type="button" name="clearButton" id="clearButton" value="Clear" onclick="resetInput(thisQty);resetInput(totalPrice);" /> 
+          	</td>
+
+          	<td style="text-align: center;">
+          		<input type="button" name="calculateButton" id="calculateButton" value="Calculate" onclick="calculateOrder(document.getElementById('thisQty').value); calculateCheck(document.getElementById('thisQty').value);"/> 
+ 
+          	</td>
+          	<td style="text-align: right;">
+          		<input type="submit" name="submitButton" id="submitButton" value="Submit" /> 
+          	</td>
+          </tr>
+		</tbody>
+	</table>
+</form>
+
+</div>
+</div>
+
+<script type="text/javascript" src="../Javascript/Javascript_members_order_content.js"></script>
+
+</div>
+
+<!-- Close footer  -->
+  <div class="footer"> 
+<a href="#" onclick="closeThis();return false;">Close</a> 
+	</div>
+		
+</body>
+
+
+</html>

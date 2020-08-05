@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en"> <!-- Language -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta http-equiv="refresh" content="500"/> <!-- Refresh 5 sec -->
+<meta name="Bazaar Ceramics online website" content="Bazaar Ceramics is a retailer that sells pottery and ceramics made from clay. Click the link to check out our gallery."/>
+
+<title>The Club Site</title>
+
+
+<style>
+
+body {
+	margin-top: 0;
+	margin-left: 0;
+	background: #FFD297;
+}  /*Body margin 0, also set background here.*/
+
+.banner { 
+    display: block; 
+	width: 100%;
+}/* This is the banner, block stretches img across page, width 100%*/
+
+.banner > .banner-image {
+    display: block;
+	width: 100%;
+}
+
+.navlist {
+	padding: 20px;
+	margin-top: -90px; 
+	list-style-type: none;
+	background-color: #C02525;
+	width: 120px;
+	height: 590px;
+	color: yellow;
+} /*Navlist styling*/
+
+.navlist a {
+     color: #FED11A;
+     text-decoration:none;
+     font-size: 20px;
+     font-weight: bold;
+} /*Navlist styling text*/
+
+h1 { 
+	 text-align: center;
+     margin: 0px;
+ 	 padding: 0px;
+ 	 background-color: black;
+ 	 color: white;
+} /*heading styling*/
+
+h2 {
+	 text-align: center;
+ 	 margin: 0px;
+ 	 padding: 0px;
+ 	 background-color: yellow;
+} /*heading styling*/
+
+
+table img {
+     width: 230px;
+     height: 190px;
+} /*Table img styling*/
+
+.div-table {
+	top: 500px;
+    left: 220px;
+	position: absolute;
+} /*div for table */
+
+td {
+	padding-right: 100px;
+	padding-bottom: 0px;
+} /*Column inside table styling*/
+
+.text-center {
+	position: absolute;
+	top: -20px;
+	left: 390px;
+}/* table heading styling*/
+
+.image-table {
+	text-align: center;
+} /*align text for text in image table*/
+
+.footer {
+    left: 0;
+    padding: 5px;
+    margin: -20px; 
+	bottom: 0;
+	width: 1350px;
+	text-align: center;
+	background-color: #BDBDBD;
+} /*footer styling*/
+
+.footer a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+} /*footer styling text
+*/
+</style>
+
+</head>
+
+<body>
+
+<div class="banner"> <!-- banner div -->
+		<img class="banner-image" src="banner.jpg" alt="bannerimagehere">
+</div>
+
+<!-- <a href="members_order.html" target="_blank">
+	<img src="../images/bcpot002_smaller.jpg"></a> -->
+
+<div class="div-table"> <!-- Div for table -->
+  <table class="image-table"> <!-- Beginning table  -->
+   <thead>
+ 	<tr>
+		<th colspan="3" class="text-center">Discounted Items</th>
+	</tr>
+   </thead>
+        <tbody> 
+        	<tr> 
+				<td><a href="members_order.html?this=copperbowl&price=450&image=002" target="_blank"><img src="../images/bcpot002_smaller.jpg" alt="Copper Red Bowl - $450"><p>Copper Red Bowl - $450</p></td> 
+				<td><a href="members_order.html?this=chunbowl&price=350&image=003" target="_blank"><img src="../images/bcpot003_smaller.jpg" alt="Chun Bowl - $350"><p>Chun Bowl - $350</p></td>
+				<td><a href="members_order.html?this=moonscapebowl&price=320&image=006" target="_blank"><img src="../images/bcpot006_smaller.jpg" alt="Moonscape Bowl - $320"><p>Moonscape Bowl - $320</p></td>
+			</tr>
+			<!-- passing variables onto members_order page -->
+		    <tr>
+				<td><a href="members_order.html?this=carvedvase1&price=450&image=008" target="_blank"><img src="../images/bcpot008_smaller.jpg" alt="Carved Vase 001 - $450"><p>Carved Vase 001 - $450</p></td>
+				<td><a href="members_order.html?this=carvedvase2&price=450&image=009" target="_blank"><img src="../images/bcpot009_smaller.jpg" alt="Carved Vase 002 - $450"><p>Carved Vase 002 - $450</p></td>
+            </tr> <!-- End cells/columns for table -->
+        </tbody>
+
+ </table>
+</div>
+
+<h1>Bazaar Ceramics - Members</h1> <!-- Main heading -->
+
+  <h2>Members Prices</h2> <!-- Second sub heading -->
+
+<div id="navlist">	
+</div> <!-- Div for nav list -->
+
+<nav>
+  <ul class="navlist"> <!-- Side bar nav bar un-ordered list-->
+       <li><a href="../info/info.html"><p>Information</p></a></li>
+
+       <li><a href="../../images/index.html"><p>Home</p></a></li>
+  </ul>
+</nav> 
+
+<footer> <!-- Footer -->
+	<div class="footer">
+		<a href="#" class="Copyright">Copyright |</a>
+		<a href="#" class="About Us"> About Us |</a>
+		<a href="#" class="Legal Stuff"> Legal Stuff</a>
+	</div>
+
+</footer>
+
+
+</body>
+</html>
